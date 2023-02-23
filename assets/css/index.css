@@ -1,0 +1,184 @@
+/*     ---   RESETS   ---     */
+body{
+    margin: 0; 
+    padding: 0;
+}
+footer{
+    margin: 0;
+    padding: 0;
+}
+a,
+a:active,
+a:visited,
+a:hover{
+    text-decoration: none;
+}
+
+/*    ---   GLOBALS   ---    */
+
+.hero-block{    
+    background: linear-gradient(90deg, #ffa60078 ,  #0ea04678 );
+}
+
+.hero-text{
+    text-align: center;
+    align-self: center;
+}
+
+h1, h2, h3, h4, p{
+    color: darkgreen;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-title{
+    font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (1140 - 320)));
+}
+h1{
+    font-size: calc(26px + (32 - 26) * ((100vw - 320px) / (1140 - 320)));
+}
+h2{
+    font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1140 - 320)));
+}
+p{
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1140 - 320)));
+}
+a{
+    transition: 0.5s;
+    color: #ce8a00;
+}
+a:hover{
+    text-shadow: #6c4800 3px 3px 3px;
+    transition: 0.5s;
+    color: #ffb520;
+}
+
+.div-download{
+    display: flex;
+    justify-content: center;
+}
+.text-download{
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1500 - 320)));
+    color: #ffb520;
+}
+.download-jkeys, .download-jkeyslite{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 10px;
+}
+.download-jkeys-div, .download-jkeyslite-div{
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ce8a00;
+    border: 8px solid #ffb520; 
+    border-radius: 25px;
+}
+.download-jkeys-div:hover, .download-jkeyslite-div:hover{
+    box-shadow: #6c4800 3px 3px 3px;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffb520;
+    border: 8px solid #ffb520; 
+    border-radius: 25px;
+}
+
+.comparison-desk{
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.comparison-desk p{
+    margin-top: 3%;
+}
+
+footer{
+    background-color: whitesmoke;
+    height: 200px;
+}
+
+
+
+/*  ---   RESPONSIVE   ---  */
+
+/* PHONES */
+@media (max-width: 767px){
+    .hero-block{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    .comparison-desk{
+        display: none;
+    }
+    .comparison-phone{
+        margin: 0 5%;
+        padding: 0 5%;
+        display: flex;
+    }
+    .download-jkeys-div, .download-jkeyslite-div{
+        margin-top: 10px;
+        width: 300px;
+        height: 100px;
+    }
+    .download-columns{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* TABLETS */
+@media (min-width: 768px){
+    .hero-block{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    .comparison-desk{
+        display: none;
+    }
+    .comparison-phone{
+        margin: 0 10%;
+        padding: 0 5%;
+        display: flex;
+    }
+    .download-jkeys-div, .download-jkeyslite-div{
+        width: 300px;
+        height: 100px;
+    }
+    .download-columns{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/* PCs */
+@media (min-width: 1024px){
+    .hero-img{
+        width: 60%;
+    }
+    .hero-block{
+        display: flex;
+        flex-direction: row;
+    }
+    .comparison-desk{
+        justify-content: start;
+        display: flex;
+    }
+    .comparison-phone{
+        display: none;
+    }
+    .download-jkeys-div, .download-jkeyslite-div{
+        width: 500px;
+        height: 100px;
+    }
+    .download-columns{
+        display: flex;
+        flex-direction: row;
+    }
+}
